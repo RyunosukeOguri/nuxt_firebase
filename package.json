@@ -4,6 +4,9 @@
   "description": "Next.js * Firebase = SPA * SSR * PWA * Serverless",
   "author": "Ryunosuke Oguri <amagurik2@gmail.com>",
   "private": true,
+  "engines": {
+    "node": "8"
+  },
   "scripts": {
     "setup": "npm run clean && npm run copyassets && npm run copystatic",
     "clean": "mkdir -p public && rm -rf public/*",

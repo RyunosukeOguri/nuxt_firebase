@@ -62,5 +62,11 @@ typings/
 
 # nuxt
 functions/nuxt/
+functions/lib/
+public/assets/
+public/sw.*
+
+# firebase
+.firebase/
 
 

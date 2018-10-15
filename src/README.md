@@ -2,6 +2,11 @@
 
 > nuxt test program
 
+```
+$ nvm use 9.11.1
+Now using node v9.11.1 (npm v5.6.0)
+```
+
 ## Build Setup
 
 ``` bash

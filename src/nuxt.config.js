@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'nuxt_firebase',
+    title: 'Nuxt.js * Firebase PWA',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'nuxt test program' }
+      { hid: 'description', name: 'description', content: 'Nuxt.js * Firebase = SPA * SSR * PWA * Serverless' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -24,18 +24,18 @@ module.exports = {
   build: {
     publicPath: '/assets/',
     extractCSS: true,
-    babel: {
-      presets: [
-        'env',
-        'stage-0'
-      ],
-      plugins: [
-        ['transform-runtime', {
-          polyfill: true,
-          regenerator: true
-        }],
-      ],
-    },
+    // babel: {
+    //   presets: [
+    //     'env',
+    //     'stage-0'
+    //   ],
+    //   plugins: [
+    //     ['transform-runtime', {
+    //       polyfill: true,
+    //       regenerator: true
+    //     }],
+    //   ],
+    // },
     /*
     ** Run ESLint on save
     */
@@ -45,10 +45,26 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
+          options: {
+            configFile: '.eslintrc.js'
+          }
         })
       }
     }
-  }
+  },
+  /*
+  ** PWA
+  */
+  modules: [
+    '@nuxtjs/pwa'
+  ],
+  manifest: {
+    name: 'Nuxt.js * Firebase PWA',
+    lang: 'ja'
+  },
+  // workbox: {
+  //   dev: false, //開発環境でもPWAできるように
+  // }
 }
 

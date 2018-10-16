@@ -4,6 +4,9 @@
 * npm 5.6.0
 * firebase tool 5.0.1
 
+## Demo
+https://nuxt-firebase-9d38d.firebaseapp.com/
+
 ## Get Started
 ```
 $ cd src/

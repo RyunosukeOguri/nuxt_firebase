@@ -4,9 +4,31 @@
 * npm 5.6.0
 * firebase tool 5.0.1
 
+## Get Started
+```
+$ cd src/
+$ npm install
+$ cd ../functions
+$ npm install
+```
+
+## Local Server
+```
+$ cd src/
+$ npm run dev
+```
+
+## Local Firebase Server
+
+```
+$ cd src/
+$ npm run build
+$ cd ..
+$ npm run setup
+$ npm run serve
+```
 
 ## Deploy
-
 ```
 $ cd src/
 $ npm run build

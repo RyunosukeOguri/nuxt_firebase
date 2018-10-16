@@ -57,11 +57,30 @@ module.exports = {
   ** PWA
   */
   modules: [
+    '@nuxtjs/onesignal', // pwaの前に定義
     '@nuxtjs/pwa'
   ],
+  //アプリホーム画面
   manifest: {
     name: 'Nuxt.js * Firebase PWA',
-    lang: 'ja'
+    short_name: 'NuxtPWA',
+    title: 'NuxtPWA',
+    'og:title': 'NuxtPWA',
+    description: 'Nuxt.js * Firebase PWA',
+    'og:description': 'Nuxt.js * Firebase PWA',
+    lang: 'ja',
+    theme_color: '#ffffff',
+    background_color: '#ffffff'
+  },
+  //プッシュ通知
+  oneSignal: {
+    init: {
+      appId: '0fdda5f1-897e-4653-9ffc-d3b6a211eaab',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: true
+      }
+    }
   },
   // workbox: {
   //   dev: false, //開発環境でもPWAできるように

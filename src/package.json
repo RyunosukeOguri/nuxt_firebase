@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/onesignal": "^2.6.0",
     "ajv": "^6.0.0",
     "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-transform-runtime": "^6.23.0",

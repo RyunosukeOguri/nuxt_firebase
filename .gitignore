@@ -70,6 +70,6 @@ public/sw.*
 .firebase/
 
 # OneSignal
-public/OneSignalSDKUpdaterWorker.js
-public/OneSignalSDKWorker.js
+OneSignalSDKUpdaterWorker.js
+OneSignalSDKWorker.js
 

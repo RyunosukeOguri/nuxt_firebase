@@ -6,6 +6,7 @@
 
 ## Get Started
 ```
+$ npm install -g firebase-tools
 $ cd src/
 $ npm install
 $ cd ../functions
@@ -18,7 +19,7 @@ $ cd src/
 $ npm run dev
 ```
 
-## Local Firebase Server
+## Firebase Server
 
 ```
 $ cd src/

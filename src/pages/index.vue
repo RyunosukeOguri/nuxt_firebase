@@ -3,10 +3,10 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        nuxt_firebase
+        NUXT×Firebase
       </h1>
       <h2 class="subtitle">
-        Vue.js×SSR×SPA×PAA×firebase
+        Vue.js×SSR×SPA×PWA×firebase
       </h2>
       <div class="links">
         <a

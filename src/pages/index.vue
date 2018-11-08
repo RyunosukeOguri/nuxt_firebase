@@ -3,20 +3,13 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        nuxt_firebase
+        NUXT×Firebase
       </h1>
       <h2 class="subtitle">
-        Vue.js×SSR×SPA×PAA×firebase
+        Vue.js×SSR×SPA×PWA×firebase
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+        <button type="button" @click="onGoogleLogout">ログアウト</button>
       </div>
     </div>
   </section>
@@ -24,22 +17,28 @@
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
+import { mapActions } from 'vuex'
 
 export default {
   components: {
     AppLogo
+  },
+  methods: {
+    ...mapActions([
+      'logout'
+    ]),
+    onGoogleLogout () {
+      this.logout()
+        .then(() => {
+          this.$router.push('/login')
+        })
+        .catch((err) => console.log(err))
+    }
   }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+<style lang="scss" scoped>
 
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */

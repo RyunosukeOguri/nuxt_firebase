@@ -85,5 +85,13 @@ module.exports = {
   // workbox: {
   //   dev: false, //開発環境でもPWAできるように
   // }
+
+  router: {
+    middleware: 'authenticated'
+  },
+
+  css: [
+    '~/assets/scss/main.scss',
+  ],
 }
 
